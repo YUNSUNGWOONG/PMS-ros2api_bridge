@@ -2,10 +2,7 @@
 <table style="width: 100%; border-collapse: collapse;" align="center"  >
         <tr>
             <td style="width: 50%; text-align: center; vertical-align: middle; border: 1px solid #000;">
-                <img src="image1.jpg" alt="이미지(1)" style="max-width: 100%; height: auto;">
-            </td>
-            <td style="width: 50%; text-align: center; vertical-align: middle; border: 1px solid #000;">
-                <img src="image2.jpg" alt="이미지(2)" style="max-width: 100%; height: auto;">
+                <img src="https://github.com/user-attachments/assets/31397a4b-e048-497f-aa87-5425e26e3059" alt="이미지(1)" style="max-width: 100%; height: auto;">
             </td>
         </tr>
     </table>
