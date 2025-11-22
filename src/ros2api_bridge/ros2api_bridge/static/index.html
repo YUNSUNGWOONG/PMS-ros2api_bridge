@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PMS Server - 차량 관제 시스템</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- 헤더 -->
+    <div class="header">
+        <h1>🚗 VTS&PMS Server : 수출차량 선적하역 자동화시스템(Nae-Ri-Da Monitoring)</h1>
+        <div class="header-controls">
+            <div class="status-indicator">
+                <div class="status-dot"></div>
+                <span>시스템 활성</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 메인 컨테이너 -->
+    <div class="main-container">
+        <!-- 시스템 정보 섹션 -->
+        <div class="camera-section">
+            <div class="camera-header">
+                <div class="camera-title">
+                    🖥️ VTS 시스템 현황(VTS:Vehicle Tracking System)
+                </div>
+            </div>
+            
+            <div id="systemInfo" class="camera-grid">
+                <div class="no-cameras">
+                    <div class="no-cameras-icon">🖥️</div>
+                    <h3>PMS 서버 관제 시스템</h3>
+                    <p>차량 진입 및 주차 관리 시스템이 활성화되었습니다</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 차량 정보 패널 -->
+        <div class="vehicle-panel">
+            <div class="panel-header">
+                <div class="panel-title">
+                    🚙 차량 현황<br>(PMS:Parking Management System)
+                </div>
+                <div class="vehicle-count" id="vehicleCount">0대</div>
+            </div>
+            
+            <div class="panel-tabs">
+                <div class="tab active" onclick="switchTab('entered')">입차</div>
+                <div class="tab" onclick="switchTab('parking')">주차중</div>
+                <div class="tab" onclick="switchTab('exiting')">출차</div>
+            </div>
+            
+            <div class="panel-content">
+                <div id="vehicleList" class="vehicle-list">
+                    <div class="empty-state">
+                        <div style="font-size: 2em; margin-bottom: 10px;">🚗</div>
+                        <p>차량 정보가 없습니다</p>
+                        <small>V2X 시스템을 통해 차량 정보가 수집됩니다</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
