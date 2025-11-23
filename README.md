@@ -59,7 +59,13 @@
 ---
 
 ## Architecture
-
+<table style="width: 100%; border-collapse: collapse;" align="center"  >
+        <tr>
+            <td style="width: 50%; text-align: center; vertical-align: middle; border: 1px solid #000;">
+                <img src="https://github.com/user-attachments/assets/adf2ccb5-3c17-49ac-b920-ca033d54c44b" alt="이미지(2)" style="max-width: 100%; height: auto;">
+            </td>
+        </tr>
+    </table>
 고수준의 아키텍처는 다음과 같습니다.
 
 1. **ROS2 Bridge Node**
